@@ -1,10 +1,8 @@
-&colorbody: #414141;
-&fonttext: "arial", sans-serif;
-&fontsize: 16px;
+@import "./core/variables";
 ​ body {
-  color: &colorBody; /* Pasar a variable */
+  color: $colorBody; /* Pasar a variable */
   display: flex;
-  font: &fontText, &fontSize; /* pasar a dos variables: texto y tamaño de texto */
+  font: $fontText, $fontSize; /* pasar a dos variables: texto y tamaño de texto */
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
@@ -12,14 +10,15 @@
 .wrapper {
   margin: 0 40px;
 }
+
 .header {
-  background: lightgrey; /* Pasar a variable */
-  height: 100px; /* Pasar a variable */
+  background: $backgroundHeader /* Pasar a variable */
+  height: $headerHeight; /* Pasar a variable */
   padding: 10px 0;
   box-sizing: border-box;
 }
 .main {
-  background: #aaa; /* Pasar a variable */
+  background: $backgroundMain; /* Pasar a variable */
   flex: 1;
 }
 .main__title {
@@ -31,8 +30,8 @@
   line-height: 140%;
 }
 .footer {
-  background: lightgrey; /* Pasar a variable */
-  height: 100px; /* Pasar a variable */
+  background: $backgroundFooter; /* Pasar a variable */
+  height: $footerHeight; /* Pasar a variable */
   padding: 10px 0;
   box-sizing: border-box;
 }
