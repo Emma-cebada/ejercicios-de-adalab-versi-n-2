@@ -1,64 +1,86 @@
 <main class="page__main">
   <h1>Values Posted</h1>
-  <form action="" method="post">
-    <label for="name">Nombre:</label>
-    <input placeholder="Jon" type="text" id="name" name="name" />
-    <label for="surnames">Apellidos:</label>
-    <input placeholder="Snow" type="text" id="surnames" name="surnames" />
-    <label for="emailAddress">Mail</label>
-    <input
-      placeholder="tuemail@dominio.subdominio"
-      type="email"
-      id="emailAddress"
-      name="emailAddress"
-    />
-    <label for="address">Dirección</label>
-    <input
-      placeholder="Calle donde vives, nº X"
-      type="text"
-      id="address"
-      name="address"
-      value="Calle"
-    />
-    <label for="name">Ciudad</label>
-    <input
-      placeholder="Invernalia"
-      type="text"
-      id="city-name"
-      name="city-name"
-    />
-    <label for="name">Provincia</label>
-    <input
-      placeholder="Norteña"
-      type="text"
-      id="province-name"
-      name="province-name"
-    />
-    <label for="name">País</label>
-    <input
-      placeholder="Los Siete Reinos"
-      type="text"
-      id="country-name"
-      name="country-name"
-    />
-    <label for="name">DNI</label>
-    <input placeholder="0000000-letra" type="text" id="dni" name="dni-number" />
-    <label for="phone">Teléfono</label>
-    <input placeholder="666666666" type="tel" id="phone" name="phone" />
-    <label for="name">Contraseña</label>
-    <input
-      placeholder="Escribe tu contraseña"
-      type="password"
-      id="password"
-      name="password"
-    />
-    <label for="name">Confirmar contraseña</label>
-    <input
-      placeholder="Repite tu contraseña"
-      type="password"
-      id="password-confirm"
-      name="password-confirm"
-    />
-    <input type="submit" value="Enviar" />
-  </form>
+  <section>
+    <form action="" method="post">
+      <label for="name">Nombre</label>
+      <input placeholder="Jon" type="text" id="name" name="name" required />
+      <label for="surnames">Apellidos</label>
+      <input placeholder="Snow" type="text" id="surnames" name="surnames" />
+      <label for="emailAddress">Mail</label>
+      <input
+        placeholder="tuemail@dominio.subdominio"
+        type="email"
+        id="emailAddress"
+        name="emailAddress"
+        required
+      />
+      <label for="address">Dirección</label>
+      <input
+        placeholder="Calle donde vives, nº X"
+        type="text"
+        id="address"
+        name="address"
+        required
+      />
+      <label for="name">Ciudad</label>
+      <input
+        placeholder="Invernalia"
+        type="text"
+        id="city-name"
+        name="city-name"
+        value="Madrid"
+        required
+      />
+      <label for="name">Provincia</label>
+      <input
+        placeholder="Norteña"
+        type="text"
+        id="province-name"
+        name="province-name"
+        required
+      />
+      <label for="name">País</label>
+      <input
+        placeholder="Los Siete Reinos"
+        type="text"
+        id="country-name"
+        name="country-name"
+        value="España"
+        required
+      />
+      <label for="name">DNI</label>
+      <input
+        placeholder="0000000-letra"
+        type="text"
+        id="dni"
+        name="dni-number"
+        required
+      />
+      <label for="phone">Teléfono</label>
+      <input
+        placeholder="666666666"
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+      />
+      <label for="name">Contraseña</label>
+      <input
+        placeholder="Escribe tu contraseña"
+        type="password"
+        id="password"
+        name="password"
+        required
+      />
+      <label for="name">Confirmar contraseña</label>
+      <input
+        placeholder="Repite tu contraseña"
+        type="password"
+        id="password-confirm"
+        name="password-confirm"
+        required
+      />
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
 </main>
