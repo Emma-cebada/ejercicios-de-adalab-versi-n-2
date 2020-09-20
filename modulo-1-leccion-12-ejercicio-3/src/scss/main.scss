@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 350px 100px;
+}
+
+.item {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.item1 {
+  background-color: pink;
+  grid-column: span 12;
+  grid-row-start: 1;
+}
+
+.item2 {
+  background-color: purple;
+  grid-column: span 4;
+  grid-row-start: 2;
+}
+
+.item3 {
+  background-color: palevioletred;
+  grid-column: span 8;
+  grid-row-start: 2;
+}
+
+.item4 {
+  background-color: aquamarine;
+  grid-column: span 12;
+  grid-row-start: 3;
+}
