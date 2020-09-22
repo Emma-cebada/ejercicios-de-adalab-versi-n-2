@@ -1,37 +1,29 @@
-* {
+body {
   margin: 0;
 }
 
-// .container {
-//   background-color: darkseagreen;
-//   width: 300px;
-//   height: 200px;
-// }
-
-.box {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
-  font-size: 20px;
-  color: #3cdbc0;
-  animation-name: intro;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  border-radius: 1em;
-  background-color: whitesmoke;
-  width: 150px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  overflow: hidden;
+  // background-color: grey;
+  height: 100vh;
 }
 
-@keyframes intro {
-  from {
-    opacity: 0;
-    transform: translatey(150px);
-    transform-origin: bottom left;
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.container:hover .popup {
+  transform: translate(50vw, 50vh);
+}
+
+.popup {
+  display: inline-block;
+  padding: 10px;
+  transform: translate(50vw, 110vh);
+  position: relative;
+  margin-top: -17.5px;
+  margin-left: -38.5px;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
+  transition: transform ease 1s;
 }
