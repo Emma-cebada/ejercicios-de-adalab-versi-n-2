@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 const main__title = document.querySelector(".main__title");
 const hi = "Hola";
 const name = "Lucia,";

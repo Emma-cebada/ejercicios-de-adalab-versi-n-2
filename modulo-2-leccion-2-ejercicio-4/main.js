@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 const dinner = "14";
 const shot = "2";
 const dinnerShot = "14 + 2 = 16";

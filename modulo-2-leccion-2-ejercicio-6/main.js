@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 // Primera forma de hacerlo
 const hi = "Hola";
 const name = "Lucia,";
