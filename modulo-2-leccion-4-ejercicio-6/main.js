@@ -8,4 +8,16 @@ function getEl(selector) {
     return getEl;
   }
 }
-console.log(getEl("paragraph"));
+
+function pair(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else if (num % 2 !== 0) {
+    return false;
+  }
+}
+
+const value = getEl(".paragraph");
+const valueParagraph = parseInt(value.innerHTML);
+
+console.log(pair(valueParagraph));
