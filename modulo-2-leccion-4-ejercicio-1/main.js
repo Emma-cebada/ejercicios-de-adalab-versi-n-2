@@ -2,5 +2,5 @@ function mult(a, b) {
   return a * b;
 }
 
-const amount = mult(3, 6);
-console.log("Resultado", amount);
+const amount = mult(4, 9);
+console.log("Resultado:", amount);
