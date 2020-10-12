@@ -8,4 +8,17 @@ function getEl(selector) {
     return getEl;
   }
 }
-console.log(getEl("paragraph"));
+console.log(getEl(".paragraph"));
+
+function pair(num) {
+  if (num % 2 === 0) {
+    return "Este número es par.";
+  } else if (num % 2 !== 0) {
+    return "Este número es impar.";
+  }
+}
+
+const value = getEl(".paragraph");
+const valueParagraph = parseInt(value.innerHTML);
+
+console.log(pair(valueParagraph));
