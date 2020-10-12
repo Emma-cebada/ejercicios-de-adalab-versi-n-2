@@ -5,4 +5,4 @@ function pair(num) {
     return false;
   }
 }
-console.log(pair(9));
+console.log(pair(6));
