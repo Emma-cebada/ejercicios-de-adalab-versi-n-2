@@ -4,5 +4,5 @@ function average(a, b, c, d) {
   return (a + b + c + d) / 4;
 }
 
-const amount = average(2, 4, 6, 8);
-console.log("Promedio", amount);
+const amount = average(18, 26, 78, 28);
+console.log("La media es:", amount);
