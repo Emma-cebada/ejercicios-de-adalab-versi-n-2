@@ -10,7 +10,7 @@
 //Transformar la función anterior en Arrow
 
 const mult = amount => {
-  return 'Resultado: ${amount}';
+  return `Resultado: ${amount}`;
 };
 
-console.log(mult (4 * 9));
+console.log(mult (5 * 9));
