@@ -49,7 +49,7 @@
 
 //Otra forma de hacer la calculadora
 
-const dogAge = 6;
+const dogAge = 17;
 const dogAge1 = 15;
 const dogAge2 = dogAge1 + 9;
 const dogAge3OrMore = ((dogAge -2) * 5) + dogAge2;
