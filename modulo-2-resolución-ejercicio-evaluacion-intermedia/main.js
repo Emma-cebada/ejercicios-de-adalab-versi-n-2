@@ -28,7 +28,7 @@ function magicNumber() {
     console.log("Debe ser un número de 0 a 100")
   }
   counter();
-  msjCounter.innerHTML = "'Número de intentos: ' + ${counter}";
+  msjCounter.innerHTML = `Número de intentos:  + ${counter}`;
 }
 
 let counterClick = 0;
