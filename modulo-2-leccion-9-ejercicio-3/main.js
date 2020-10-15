@@ -13,6 +13,7 @@ function bestLostNumber() {
       mult3.push(lostNumbers[i]);
     }
   }
+  console.log(arrempty.concat(mult3));
 }
 
 bestLostNumber();
