@@ -88,13 +88,31 @@ const studentsWorkingInGoogle = ['id-2', 'id-3', 'id-5', 'id-9'];
 
 
 //Ejercicio 2
-function createList() {
-  const addElement = document.querySelector(".js-result");
-  let accName = " ";
+// function createList() {
+//   const addElement = document.querySelector(".js-result");
+//   let accName = " ";
+//   for (let i = 0; i < promos.length; i++) {
+//     accName += `<li><p>Nombre: ${promos[i].name}</p><p>Promo: ${promos[i].promo}</p></li>`;
+//   }
+//   addElement.innerHTML = `<ul>${accName}</ul>`
+// }
+
+// createList();
+
+//Ejercicio 3
+
+// console.log(promos[0].name);
+// console.log(promos[0].promo);
+// console.log(promos[0].students.length); Esto sirve para ver cómo llegar a lo queremos sacar.
+
+function promosAdalabers() {
+  const listItems = document.querySelector(".js-result");
+  let accInfo = " ";
   for (let i = 0; i < promos.length; i++) {
-    accName += `<li><p>Nombre: ${promos[i].name}</p><p>Promo: ${promos[i].promo}</p></li>`;
+    accInfo += `<li><p>Nombre: ${promos[i].name}</p><p>Promo: ${promos[i].promo}</p><p>Número de alumnas: ${promos[i].students.length}</p></li>`
   }
-  addElement.innerHTML = `<ul>${accName}</ul>`
+
+  listItems.innerHTML = `<ul>${accInfo}</ul>`;
 }
 
-createList();
+promosAdalabers();
