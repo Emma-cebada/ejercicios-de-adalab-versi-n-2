@@ -105,14 +105,32 @@ const studentsWorkingInGoogle = ['id-2', 'id-3', 'id-5', 'id-9'];
 // console.log(promos[0].promo);
 // console.log(promos[0].students.length); Esto sirve para ver cómo llegar a lo queremos sacar.
 
-function promosAdalabers() {
-  const listItems = document.querySelector(".js-result");
-  let accInfo = " ";
-  for (let i = 0; i < promos.length; i++) {
-    accInfo += `<li><p>Nombre: ${promos[i].name}</p><p>Promo: ${promos[i].promo}</p><p>Número de alumnas: ${promos[i].students.length}</p></li>`
+// function promosAdalabers() {
+//   const listItems = document.querySelector(".js-result");
+//   let accInfo = " ";
+//   for (let i = 0; i < promos.length; i++) {
+//     accInfo += `<li><p>Nombre: ${promos[i].name}</p><p>Promo: ${promos[i].promo}</p><p>Número de alumnas: ${promos[i].students.length}</p></li>`
+//   }
+
+//   listItems.innerHTML = `<ul>${accInfo}</ul>`;
+// }
+
+// promosAdalabers();
+
+//Ejercicio 4
+
+//console.log(promos[0].name);
+//console.log(promos[0].students[0].name, promos[0].students[0].age); Esto sirve para ver cómo llegar a lo queremos sacar.
+
+let printNameAdalabers = " ";
+let dataAdalabers = " ";
+const listGeneral = document.querySelector(".js-result");
+for (let i = 0; i < promos.length; i++) {
+  for (let stud = 0; stud < promos[i].students.length; stud++) {
+    printNameAdalabers += `<li>${promos[i].students[stud].name}, ${promos[i].students[stud].age}</li>`
   }
 
-  listItems.innerHTML = `<ul>${accInfo}</ul>`;
+  dataAdalabers += `<li><p>Nombre: ${promos[i].name}</p><ul></ul>${printNameAdalabers}</li>`
+  printNameAdalabers = " ";
 }
-
-promosAdalabers();
+listGeneral.innerHTML = `<ul>${dataAdalabers}</ul>`;
