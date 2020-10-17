@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 const promos = [
   {
     promo: 'A',
@@ -72,17 +70,31 @@ const studentsWorkingInGoogle = ['id-2', 'id-3', 'id-5', 'id-9'];
 
 // TÚ CÓDIGO AQUÍ
 
-const htmlContainer = document.querySelector(".js-result");
+//Ejercicio 1
+// const htmlContainer = document.querySelector(".js-result");
 
-function listAdalabers() {
+// function listAdalabers() {
 
-  let accname = " ";
+//   let accname = " ";
 
+//   for (let i = 0; i < promos.length; i++) {
+//     accname += `<li>${promos[i].name}</li>`;
+//   }
+
+//   htmlContainer.innerHTML = `<ul>${accname}</ul>`;
+// }
+
+// listAdalabers();
+
+
+//Ejercicio 2
+function createList() {
+  const addElement = document.querySelector(".js-result");
+  let accName = " ";
   for (let i = 0; i < promos.length; i++) {
-    accname += `<li>${promos[i].name}</li>`;
+    accName += `<li><p>Nombre: ${promos[i].name}</p><p>Promo: ${promos[i].promo}</p></li>`;
   }
-
-  htmlContainer.innerHTML = `<ul>${accname}</ul>`;
+  addElement.innerHTML = `<ul>${accName}</ul>`
 }
 
-listAdalabers();
+createList();
